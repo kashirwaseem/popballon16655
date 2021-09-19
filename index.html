@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <link rel="stylesheet" href="stylemain.css" />
+    <!-- <link rel="stylesheet" href="./round1.html"> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sign-up-card">
+      <h3>Log In</h3>
+      <div class="input-div">
+        <label for="Email">Email</label>
+        <input id="logemail" type="email" placeholder="Email" />
+      </div>
+      <div class="input-div">
+        <label for="Password">Password</label>
+        <input id="logpassword" type="password" placeholder="password" />
+      </div>
+      <div class="btn" onclick="login()">Log In</div>
+      <div class="btn" onclick=" signup() ">Sign Up</div>
+    </div>
+
+    <script type="module">
+      const firebaseConfig = {
+        apiKey: "AIzaSyBPd-odgAYOGACrNK-BsoWO9Y5gtJrs4Qc",
+        authDomain: "hackaton-b4e5b.firebaseapp.com",
+        projectId: "hackaton-b4e5b",
+        storageBucket: "hackaton-b4e5b.appspot.com",
+        messagingSenderId: "347559502123",
+        appId: "1:347559502123:web:caa331adfbf5e71710e56e",
+        measurementId: "G-998ND0D8QQ",
+      };
+
+      firebase.initializeApp(firebaseConfig);
+
+      // Initialize Firebase
+    </script>
+    <script src="app1.js"></script>
+
+  </body>
+</html>
